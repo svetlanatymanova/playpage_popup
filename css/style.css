@@ -1,30 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:500,700,800&display=swap);
-
 @charset "UTF-8";
-
-@font-face {
-  font-family: SegoeUIBold;
-  font-display: swap;
-  src: url("../fonts/SegoeUIBold.woff2") format("woff2"), url("../fonts/SegoeUIBold.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: SegoeUIRegular;
-  font-display: swap;
-  src: url("../fonts/SegoeUIRegular.woff2") format("woff2"), url("../fonts/SegoeUIRegular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: SegoeUISemiBold;
-  font-display: swap;
-  src: url("../fonts/SegoeUISemiBold.woff2") format("woff2"), url("../fonts/SegoeUISemiBold.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
+@import url(https://fonts.googleapis.com/css?family=Montserrat:500,700,800&display=swap);
 
 * {
   padding: 0px;
