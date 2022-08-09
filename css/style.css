@@ -3,24 +3,27 @@
 @charset "UTF-8";
 
 @font-face {
-  font-family: "Segoe UI";
+  font-family: SegoeUIBold;
   font-display: swap;
   src: url("../fonts/SegoeUIBold.woff2") format("woff2"), url("../fonts/SegoeUIBold.woff") format("woff");
-  font-weight: 700;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Segoe UI";
+  font-family: SegoeUIRegular;
   font-display: swap;
   src: url("../fonts/SegoeUIRegular.woff2") format("woff2"), url("../fonts/SegoeUIRegular.woff") format("woff");
   font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "Segoe UI";
+  font-family: SegoeUISemiBold;
   font-display: swap;
   src: url("../fonts/SegoeUISemiBold.woff2") format("woff2"), url("../fonts/SegoeUISemiBold.woff") format("woff");
-  font-weight: 600;
+  font-weight: 400;
+  font-style: normal;
 }
 
 * {
@@ -375,6 +378,13 @@ body::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.item-popup:hover {
+  border: 1px solid #18ad00;
 }
 
 .item-popup__title {
