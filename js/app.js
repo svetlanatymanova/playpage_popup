@@ -199,9 +199,6 @@
                     this.previousOpen.element = this.targetOpen.element;
                     this._selectorOpen = false;
                     this.isOpen = true;
-                    setTimeout((() => {
-                        this._focusTrap();
-                    }), 50);
                     this.options.on.afterOpen(this);
                     document.dispatchEvent(new CustomEvent("afterPopupOpen", {
                         detail: {
@@ -240,9 +237,6 @@
                     popup: this
                 }
             }));
-            setTimeout((() => {
-                this._focusTrap();
-            }), 50);
             this.popupLogging(`Закрыл попап`);
         }
         _getHash() {
@@ -271,10 +265,6 @@
                 focusArray[0].focus();
                 e.preventDefault();
             }
-        }
-        _focusTrap() {
-            const focusable = this.previousOpen.element.querySelectorAll(this._focusEl);
-            if (!this.isOpen && this.lastFocusEl) this.lastFocusEl.focus(); else focusable[0].focus();
         }
         popupLogging(message) {}
     }
